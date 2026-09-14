@@ -1,0 +1,100 @@
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px 20px;
+}
+.accordion {
+    background-color:#303438;
+    color: #f4f1eb;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-left: 4px solid #fe7731;
+    outline: none;
+    transition: 0.4s;
+    font-weight: bold;
+    text-align: left;
+}
+
+.accordion:after {
+    content: '\02795'; /*Plus sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /*Minus sign (-) */
+}
+
+.active, .accordion:hover {
+    background-color: #aaa;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #2D3135;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+body {
+    background-color: rgb(38, 41, 44);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+p {
+    color: white;
+}
+
+.panel p {
+    color: #f4f1eb;
+}
+
+strong {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-logo {
+    width: 180px;
+    max-width: 70%;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    max-width: 700px;
+    margin: 0 auto 16px;
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+.hero-subtext {
+    color: #b9bdc1;
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #fe7731;
+    color: #26292c;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+}
